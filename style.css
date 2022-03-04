@@ -1,0 +1,180 @@
+*{
+    /* border: 5px solid; */
+    margin: 0px;
+
+}
+body{background-color: rgb(13, 2, 22);}
+.cover{
+    background-image: url("https://i.pinimg.com/originals/2d/6a/c3/2d6ac366c4a04020fd98c8bf9542bb70.jpg");
+    width: 100%;
+    height: 667px;
+    position: absolute;
+    
+}
+
+a{
+    color: aliceblue;
+    text-decoration: none;
+    padding: 10px;
+    border-bottom: 2px solid rgb(82, 20, 75);
+}
+header{
+    height: 50px;
+    margin-top: 10px;
+    text-align: right;
+    padding: 15px;
+    font-size: larger;
+    opacity: .8;
+    color: black;
+    
+}
+.me{
+    width: 200px;
+    height: 200px;
+    border-radius: 50% ;
+}
+.center{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    top: 100px;
+    
+}
+.right{
+    position:absolute;
+    width: 100%;
+    text-align: right;
+    padding-right: 20px;
+    margin: -50px;
+    top: 0px;
+    font-size: x-large;
+    font-family: 'Kufam', sans-serif;
+}
+p{
+    padding: 20px;
+    color: aliceblue;
+    font-size: larger;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.star{
+    width: 50px;
+    height: auto;
+   
+   
+    
+}
+.st{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50px;
+   
+
+    
+}
+.st1{
+    position: absolute;
+    top: 5px;
+    transition: all 1s;
+    animation: st2 22s infinite linear;
+ 
+
+}
+.st2{
+    
+    position: absolute;
+    top: 50px;
+    transition: all 1s;
+    animation: st 15s infinite linear;
+    animation: st2 10s infinite linear;
+
+
+}
+.st3{
+    position: absolute;
+    top: 80px;
+    
+    transition: all 1s;
+    animation: st2 15s infinite linear;
+}
+
+@keyframes st2{
+   0%{ transform: rotate(0deg);
+    right: 100%;
+    }
+   
+   100%{transform: rotate(720deg);
+    right: 0px;}
+}
+.ra{
+    position: absolute;
+    top: 60%;
+    width: 80px;
+    height: auto;
+    padding-left: 10%;
+    animation: ra 5s infinite linear;
+}
+@keyframes ra{
+    0%,100%{transform: rotate(-15deg);}
+    50%{transform: rotate(20deg);}
+}
+.md{
+    position:absolute;
+    width: 100%;
+    height: auto;
+    bottom: -3%;
+
+}
+.mdr{
+    width: 20%;
+    animation: mm 8s infinite linear;
+    position:relative;
+
+    
+}
+@keyframes mm {
+0%{ right: 10%;}
+
+
+60%{
+    right: -20% ;
+    transform: scale(1,1);
+}
+80%{
+    right: -20% ;
+    transform: scale(1.199,1.199);
+}
+100%{
+    right: -20% ;
+    transform:scale(1,1);
+    
+}
+}
+
+.b{
+    position: absolute;
+    width: 5%;
+    border-radius: 50%;
+    height: auto;
+    animation: b 8s infinite 6.3s linear ;
+    margin-top: -2%;
+    margin-left: 20%;
+    opacity: 0;
+
+}
+
+@keyframes b {
+    0%{
+        opacity: 0;
+        transform: translate(0%, 0%)
+    }
+    10%{
+        opacity: 1;
+        
+    }
+    100%{
+        opacity: 1;
+        transform: translate(1100%, -400%)
+    }
+
+}
